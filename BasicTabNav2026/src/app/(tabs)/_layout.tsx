@@ -1,8 +1,8 @@
-import { Tabs } from "expo-router";
-import Ionicons from "@react-native-vector-icons/ionicons";
 import colors from "@/styles/colors";
+import Ionicons from "@react-native-vector-icons/ionicons";
+import { Tabs } from "expo-router";
 
-// Need to run this install statement for this 
+// Need to run this install statement for this
 // icon library to work. Note the second i is lowercase
 // import Ionicons from '@react-native-vector-icons/ionicons';
 
@@ -30,7 +30,7 @@ export default function TabsLayout() {
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
               size={24}
-              color={color}
+              color={"lightblue"}
             />
           ),
         }}
