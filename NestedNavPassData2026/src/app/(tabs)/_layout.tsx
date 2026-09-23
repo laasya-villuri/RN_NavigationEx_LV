@@ -7,6 +7,13 @@ export default function TabsLayout() {
   const { name, activity } = useLocalSearchParams(); // Retrieve passed data
   const router = useRouter();
 
+  //useEffect is basically do something when something happens
+  //if neither of them have a value this method will run
+
+  //!name means name doesn't have a value
+  //this screen (the tab nav) depends upon name and activity
+  //that is what we see in the dependency array[name,activity]
+
   useEffect(() => {
     if (!name || !activity) {
       router.replace("/"); // Redirect to entry screen if no data
